@@ -1,0 +1,158 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'consolas';
+}
+.head{
+  width: 100%;
+  height: 60px;
+  background: rgb(241, 253, 64);
+}
+.head .logo{
+  line-height: 60px;
+  font-display: flex;
+  margin-left: 50px;
+}
+.head .logo span{
+  font-size: 30px;
+}
+.box{
+  position: relative;
+  top: 100px;
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 1px #eee;
+  margin: 0 auto;
+}
+@media (max-width: 500px){
+  .head .logo span{
+    position: relative;
+    margin: 0 auto;
+    font-size: 25px;
+  }
+  .box{
+    width: 300px;
+  }
+}
+.inputs{
+  width: 90%;
+  height: 250px;
+  margin: 0 5%;
+  position: relative;
+  justify-content: center;
+}
+.inputs input{
+  margin: 10px 0;
+  width: 95%;
+  height: 40px;
+  padding: 5px 10px;
+  font-size: 30px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px #eee,
+              -2px -2px 2px 1px #eee;
+  outline: none;
+}
+.inputs textarea{
+  margin: 10px 0;
+  min-width: 95%;
+  max-width: 95%;
+  min-height: 150px;
+  max-height: 150px;
+  width: 95%;
+  height: 150px;
+  padding: 5px 10px;
+  font-size: 30px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px #eee,
+              -2px -2px 2px 1px #eee;
+  outline: none;
+}
+.add{
+  position: absolute;
+  top: 90%;
+  left: 95%;
+}
+.add button{
+  background: none;
+  border: none;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px 1px #eee;
+  outline: none;
+}
+.add button i{
+  color: rgb(241, 253, 64);
+  font-size: 30px;
+}
+.add button:hover{
+  background: rgb(241, 253, 64);
+  cursor: pointer;
+}
+.add button:hover i{
+  color: #fff;
+}
+.flexbox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  /* justify-content: center; */
+}
+.box_o{
+  width: 250px;
+  height: 250px;
+  background: #fff;
+  box-shadow: 5px 5px 5px 1px #eee,
+  -5px -5px 5px 1px #eee;
+  border-radius: 10px;
+  position: relative;
+  margin: 15px;
+}
+.box_o .delete{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.box_o .delete button{
+  width: 40px;
+  height: 40px;
+  background: red;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+}
+.box_o .delete button i{
+  font-size: 25px;
+  color: white;
+}
+.title_o{
+  position: absolute;
+  top: 40px;
+  left: 10px;
+}
+.note_o{
+  position: absolute;
+  top: 100px;
+  left: 10px;
+}
+.footer_app{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: rgb(241, 253, 64);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.footer_app span{
+  font-size: 25px;
+}
