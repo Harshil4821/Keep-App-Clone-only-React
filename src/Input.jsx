@@ -8,10 +8,6 @@ const Input = (props)=>{
         note: ''
     });
     const Get = (e)=>{
-        if(e.target.value === ""){
-            alert("H");
-            document.getElementById("title").style.background = "white";
-        }
         const {value , name} = e.target;
         Setcnote((prevdata)=>{
             return (
@@ -29,7 +25,6 @@ const Input = (props)=>{
         }
         else{
             alert("You must enter title field.");
-            document.getElementById("title").style.background = "rgba(255,0,0,.5)";
         }
     }
     return (
