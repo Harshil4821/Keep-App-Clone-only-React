@@ -7,7 +7,6 @@ const Output = (props)=>{
         const arr = props.op.map((v,i)=>{
             if(e !== i)
             {
-                console.log(v,i);
                 return v;
             }
         });
@@ -15,7 +14,6 @@ const Output = (props)=>{
             arr[a] = arr[a+1];
         }
         arr.length -= 1;
-        console.log(arr);
         props.update(arr);
     };
     return (
