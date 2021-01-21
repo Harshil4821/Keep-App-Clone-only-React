@@ -14,7 +14,6 @@ const App = ()=> {
     Setcount(count+1);
   };
   const Updatearr = (e)=>{
-    console.log(e);
     Setarr(e);
   }
   return (
